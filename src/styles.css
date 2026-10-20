@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * FridgePulse design system — dark-first, glass, organic accents.
+ * FridgePulse design system — dark-first dusk palette, glass, warm accents.
  * All colors use oklch. Never hardcode colors in components.
  */
 
@@ -18,8 +18,8 @@
   --radius-3xl: calc(var(--radius) + 20px);
   --radius-4xl: calc(var(--radius) + 28px);
 
-  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -42,10 +42,10 @@
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
 
-  --color-lime: var(--lime);
-  --color-emerald: var(--emerald);
+  --color-sun: var(--sun);
+  --color-rose: var(--rose);
   --color-amber: var(--amber);
-  --color-cyan: var(--cyan);
+  --color-violet: var(--violet);
   --color-urgent: var(--urgent);
   --color-soon: var(--soon);
   --color-fresh: var(--fresh);
@@ -53,9 +53,9 @@
   --color-glass-strong: var(--glass-strong);
   --color-glass-border: var(--glass-border);
 
-  --color-chart-1: var(--lime);
-  --color-chart-2: var(--emerald);
-  --color-chart-3: var(--cyan);
+  --color-chart-1: var(--sun);
+  --color-chart-2: var(--rose);
+  --color-chart-3: var(--violet);
   --color-chart-4: var(--amber);
   --color-chart-5: var(--urgent);
 
@@ -69,39 +69,39 @@
 }
 
 :root {
-  --radius: 1rem;
+  --radius: 1.25rem;
 
-  --background: oklch(0.17 0.021 168);
-  --foreground: oklch(0.968 0.012 150);
-  --card: oklch(0.235 0.024 168);
-  --card-foreground: oklch(0.968 0.012 150);
-  --popover: oklch(0.215 0.024 168);
-  --popover-foreground: oklch(0.968 0.012 150);
-  --primary: oklch(0.83 0.19 133);
-  --primary-foreground: oklch(0.19 0.05 145);
-  --secondary: oklch(0.3 0.03 168);
-  --secondary-foreground: oklch(0.95 0.012 150);
-  --muted: oklch(0.28 0.026 168);
-  --muted-foreground: oklch(0.775 0.024 155);
-  --accent: oklch(0.72 0.14 178);
-  --accent-foreground: oklch(0.18 0.04 168);
-  --destructive: oklch(0.63 0.2 25);
+  --background: oklch(0.16 0.032 285);
+  --foreground: oklch(0.97 0.012 300);
+  --card: oklch(0.22 0.038 285);
+  --card-foreground: oklch(0.97 0.012 300);
+  --popover: oklch(0.2 0.038 285);
+  --popover-foreground: oklch(0.97 0.012 300);
+  --primary: oklch(0.8 0.15 50);
+  --primary-foreground: oklch(0.2 0.05 30);
+  --secondary: oklch(0.28 0.042 285);
+  --secondary-foreground: oklch(0.95 0.012 300);
+  --muted: oklch(0.27 0.036 285);
+  --muted-foreground: oklch(0.77 0.03 295);
+  --accent: oklch(0.7 0.17 345);
+  --accent-foreground: oklch(0.18 0.04 330);
+  --destructive: oklch(0.64 0.21 22);
   --destructive-foreground: oklch(0.98 0.01 90);
-  --border: oklch(0.98 0.01 150 / 12%);
-  --input: oklch(0.98 0.01 150 / 16%);
-  --ring: oklch(0.83 0.19 133 / 70%);
+  --border: oklch(0.98 0.015 300 / 12%);
+  --input: oklch(0.98 0.015 300 / 16%);
+  --ring: oklch(0.8 0.15 50 / 70%);
 
-  --lime: oklch(0.87 0.2 128);
-  --emerald: oklch(0.72 0.15 158);
-  --amber: oklch(0.82 0.15 78);
-  --cyan: oklch(0.78 0.11 195);
-  --urgent: oklch(0.71 0.17 32);
-  --soon: oklch(0.84 0.15 82);
-  --fresh: oklch(0.82 0.17 145);
+  --sun: oklch(0.83 0.15 58);
+  --rose: oklch(0.7 0.19 355);
+  --amber: oklch(0.85 0.14 85);
+  --violet: oklch(0.66 0.17 295);
+  --urgent: oklch(0.68 0.2 22);
+  --soon: oklch(0.85 0.14 85);
+  --fresh: oklch(0.82 0.14 165);
 
-  --glass: oklch(0.98 0.02 150 / 6%);
-  --glass-strong: oklch(0.98 0.02 150 / 11%);
-  --glass-border: oklch(0.98 0.02 150 / 14%);
+  --glass: oklch(0.98 0.03 300 / 6%);
+  --glass-strong: oklch(0.98 0.03 300 / 11%);
+  --glass-border: oklch(0.98 0.03 300 / 15%);
 
   --shadow-glass:
     0 1px 0 0 oklch(1 0 0 / 10%) inset, 0 20px 50px -24px oklch(0 0 0 / 75%),
@@ -110,9 +110,9 @@
     0 1px 0 0 oklch(1 0 0 / 14%) inset, 0 32px 70px -28px oklch(0 0 0 / 85%);
   --gradient-primary: linear-gradient(
     135deg,
-    var(--lime) 0%,
-    var(--emerald) 55%,
-    var(--cyan) 120%
+    var(--sun) 0%,
+    var(--rose) 55%,
+    var(--violet) 110%
   );
 }
 
@@ -147,7 +147,7 @@
   }
 
   ::selection {
-    background: oklch(0.87 0.2 128 / 30%);
+    background: oklch(0.7 0.19 355 / 35%);
   }
 }
 
@@ -241,11 +241,11 @@
   0%,
   100% {
     opacity: 1;
-    box-shadow: 0 0 0 0 oklch(0.71 0.17 32 / 45%);
+    box-shadow: 0 0 0 0 oklch(0.68 0.2 22 / 45%);
   }
   50% {
     opacity: 0.75;
-    box-shadow: 0 0 0 6px oklch(0.71 0.17 32 / 0%);
+    box-shadow: 0 0 0 6px oklch(0.68 0.2 22 / 0%);
   }
 }
 

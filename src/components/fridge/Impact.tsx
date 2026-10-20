@@ -49,8 +49,8 @@ export function RescueScore({ score }: { score: number }) {
           <circle cx="75" cy="75" r={r} fill="none" strokeWidth="10" className="stroke-secondary/70" />
           <defs>
             <linearGradient id="scoreGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="var(--lime)" />
-              <stop offset="100%" stopColor="var(--cyan)" />
+              <stop offset="0%" stopColor="var(--sun)" />
+              <stop offset="100%" stopColor="var(--violet)" />
             </linearGradient>
           </defs>
           <motion.circle
@@ -90,8 +90,8 @@ export function TrendChart() {
           <AreaChart data={IMPACT_TREND} margin={{ top: 8, right: 4, left: 4, bottom: 0 }}>
             <defs>
               <linearGradient id="trendFill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="var(--lime)" stopOpacity={0.5} />
-                <stop offset="100%" stopColor="var(--lime)" stopOpacity={0} />
+                <stop offset="0%" stopColor="var(--rose)" stopOpacity={0.5} />
+                <stop offset="100%" stopColor="var(--rose)" stopOpacity={0} />
               </linearGradient>
             </defs>
             <XAxis
@@ -112,7 +112,7 @@ export function TrendChart() {
             <Area
               type="monotone"
               dataKey="rescued"
-              stroke="var(--lime)"
+              stroke="var(--rose)"
               strokeWidth={2.5}
               fill="url(#trendFill)"
             />

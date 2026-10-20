@@ -31,7 +31,7 @@ export function HeroTransform() {
           height={768}
           className="size-full object-cover"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,oklch(0.17_0.021_168/85%)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,oklch(0.16_0.032_285/85%)_100%)]" />
 
         <AnimatePresence>
           {step === 1 && (
@@ -41,8 +41,8 @@ export function HeroTransform() {
               exit={{ opacity: 0 }}
               className="absolute inset-0"
             >
-              <div className="animate-scanline absolute inset-x-0 h-20 -translate-y-1/2 bg-[linear-gradient(180deg,transparent,oklch(0.87_0.2_128/28%),transparent)]">
-                <div className="absolute inset-x-0 top-1/2 h-px bg-primary shadow-[0_0_18px_2px_oklch(0.87_0.2_128/70%)]" />
+              <div className="animate-scanline absolute inset-x-0 h-20 -translate-y-1/2 bg-[linear-gradient(180deg,transparent,oklch(0.83_0.15_58/28%),transparent)]">
+                <div className="absolute inset-x-0 top-1/2 h-px bg-primary shadow-[0_0_18px_2px_oklch(0.83_0.15_58/70%)]" />
               </div>
               <p className="absolute bottom-4 left-4 rounded-full bg-background/70 px-3 py-1.5 text-xs backdrop-blur-md">
                 Identifying ingredients…

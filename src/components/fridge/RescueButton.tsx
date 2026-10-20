@@ -20,7 +20,7 @@ export function RescueButton({
       transition={{ type: "spring", stiffness: 420, damping: 22 }}
       className={cn(
         "group bg-gradient-primary relative w-full overflow-hidden rounded-2xl px-8 py-5 text-lg font-semibold text-primary-foreground",
-        "shadow-[0_18px_50px_-18px_oklch(0.87_0.2_128/60%)] disabled:opacity-80 sm:w-auto",
+        "shadow-[0_18px_50px_-18px_oklch(0.7_0.19_355/60%)] disabled:opacity-80 sm:w-auto",
         className,
       )}
     >

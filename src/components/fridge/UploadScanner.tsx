@@ -143,9 +143,9 @@ export function UploadScanner({
                     exit={{ opacity: 0 }}
                     className="absolute inset-0"
                   >
-                    <div className="absolute inset-0 bg-[linear-gradient(transparent_calc(100%_-_1px),oklch(0.87_0.2_128/18%)_100%)] bg-[length:100%_28px]" />
-                    <div className="animate-scanline absolute inset-x-0 h-24 -translate-y-1/2 bg-[linear-gradient(180deg,transparent,oklch(0.87_0.2_128/30%),transparent)]">
-                      <div className="absolute inset-x-0 top-1/2 h-px bg-primary shadow-[0_0_18px_2px_oklch(0.87_0.2_128/70%)]" />
+                    <div className="absolute inset-0 bg-[linear-gradient(transparent_calc(100%_-_1px),oklch(0.83_0.15_58/18%)_100%)] bg-[length:100%_28px]" />
+                    <div className="animate-scanline absolute inset-x-0 h-24 -translate-y-1/2 bg-[linear-gradient(180deg,transparent,oklch(0.83_0.15_58/30%),transparent)]">
+                      <div className="absolute inset-x-0 top-1/2 h-px bg-primary shadow-[0_0_18px_2px_oklch(0.83_0.15_58/70%)]" />
                     </div>
                   </motion.div>
                 )}
